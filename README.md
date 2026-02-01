@@ -90,5 +90,3 @@ python src/train_model.py
 ## Data
 The dataset is located at `data/raw/flight_prices.csv`.
 
-## License
-For academic/demo use. Add a license if you plan to distribute.
