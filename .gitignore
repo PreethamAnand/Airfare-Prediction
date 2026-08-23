@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data
+data/raw/
+data/processed/
+
+# Reports / generated outputs
+reports/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+
+# Unused Model files
+models/random_forest.pkl
+models/linear_regression.pkl
+models/model_performance.csv
+models/feature_names.csv
+notebooks/
+src/

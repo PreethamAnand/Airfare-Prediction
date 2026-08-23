@@ -62,7 +62,8 @@ with st.form('prediction_form'):
 
     if submitted:
         try:
-            # Create input DataFrame
+            # Create input DataFrame (Note: duration must be converted to minutes to match training)
+            duration_minutes = int(float(duration) * 60)
             input_data = pd.DataFrame({
                 'airline': [airline],
                 'source_city': [source_city],
@@ -71,7 +72,7 @@ with st.form('prediction_form'):
                 'arrival_time': [arrival_time],
                 'destination_city': [destination_city],
                 'class': [flight_class],
-                'duration': [duration],
+                'duration': [duration_minutes],
                 'days_left': [days_left]
             })
 
